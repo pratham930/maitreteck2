@@ -1,6 +1,6 @@
 * {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
 }
 .btn1 {
   background-color: green;
@@ -110,4 +110,35 @@
   text-decoration: none;
   font-size: larger;
   color: black;
+}
+
+.singup h2 {
+  padding: 8px 5px 0px 0px;
+  margin: 40px 90px 0px 200px;
+}
+
+.singup {
+  background-color: pink;
+  margin-left: 400px;
+
+  border-color: cyan;
+  border-radius: 8px;
+  width: fit-content;
+}
+.singup input {
+  padding: 5px;
+  margin: 40px 160px 0px 200px;
+  border-radius: 4px;
+}
+.prebtn {
+  background-color: rgb(67, 67, 200);
+  border-radius: 10px;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 35px 0px 9px 200px;
+  cursor: pointer;
 }

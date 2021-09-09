@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Cart from "./components/Cart";
 import Checkout from "./components/Checkout.js";
+import Singup from "./components/Singup";
 import { BrowserRouter, Route, Switch, NavLink } from "react-router-dom";
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/Cart" component={Cart} />
           <Route exact path="/Checkout" component={Checkout} />
+          <Route exact path="/singup" component={Singup} />
         </Switch>
       </div>
     </BrowserRouter>
@@ -21,8 +23,8 @@ function App() {
 const Home = () => {
   return (
     <div className="home">
-      <h1> cheack out our menu item</h1>
-      <li>
+      <h1> cheack out our menu items</h1>
+      <li className="now">
         {" "}
         <NavLink className="active_class" to="/cart">
           ORDER NOW!
@@ -34,20 +36,27 @@ const Home = () => {
 const Nav = () => {
   return (
     <div className="menustyle">
-      <h1> Maitreteck Restorent </h1>
+      <h1> swasch restorent </h1>
       <ul>
         <li>
           {" "}
           <NavLink className="active_class" to="/">
             {" "}
-            home
+            Home
           </NavLink>{" "}
         </li>
         <li>
           {" "}
           <NavLink className="active_class" to="/cart">
             {" "}
-            menu
+            Menu
+          </NavLink>{" "}
+        </li>
+        <li>
+          {" "}
+          <NavLink className="active_class" to="/singup">
+            {" "}
+            Singup
           </NavLink>{" "}
         </li>
       </ul>
